@@ -1,0 +1,14 @@
+name: Manual # ワークフロー名
+on: # トリガーイベント
+  workflow_dispatch: # 手動トリガー
+    inputs: # ユーザー入力
+      greeteing: # 入力名
+        type: string # 入力タイプ
+        default: "Hello" # デフォルト値
+        required: true # "必須入力"
+        description: "Greeting message" # 入力説明
+jobs: # ジョブの定義
+  run: # ジョブ名/ID
+    runs-on: ubuntu-latest # 実行環境
+    steps: # ステップの定義
+      - run: echo "${{ inputs.greeting }}" # ステップの実行内容
