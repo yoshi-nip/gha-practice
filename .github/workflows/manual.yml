@@ -2,7 +2,7 @@ name: Manual # ワークフロー名
 on: # トリガーイベント
   workflow_dispatch: # 手動トリガー
     inputs: # ユーザー入力
-      greeteing: # 入力名
+      greeting: # 入力名
         type: string # 入力タイプ
         default: "Hello" # デフォルト値
         required: true # "必須入力"
