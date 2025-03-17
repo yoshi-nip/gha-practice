@@ -22,6 +22,7 @@ To see runs for this workflow, try: gh run list --workflow=manual.yml
 もろんGUIからもできる
 
 choice型、指定以外のものだと弾かれる
+[choice.yml](/.github/workflows/choice.yml)
 ```
 gh workflow run choice.yml -f log-level=error
 ✓ Created workflow_dispatch event for choice.yml at main
