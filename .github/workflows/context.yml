@@ -1,0 +1,22 @@
+name: Context
+on: push
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print context
+        run: |
+          echo "actor ${{ github.actor }} \n
+          run_id ${{ github.run_id }} \n
+          sha ${{ github.sha }} \n
+          ref ${{ github.ref }} \n
+          event ${{ github.event_name }} \n
+          repo ${{ github.repository }} \n
+          workspace ${{ github.workspace }} \n
+          action ${{ github.action }} \n
+          job ${{ github.job }} \n
+          workflow ${{ github.workflow }} \n
+          action ${{ github.action }} \n
+          event ${{ github.event }} \n
+          event_path ${{ github.event_path }} \n
+          event_name ${{ github.event_name }} "
