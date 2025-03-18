@@ -1,0 +1,8 @@
+name: Default Environment variables
+on: push # トリガーをpushに変更
+jobs: #
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "${GITHUB.ACTOR}
+      - uses: actions/checkout@v4
