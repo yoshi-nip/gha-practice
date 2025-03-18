@@ -1,11 +1,11 @@
-name: Schedule
-on:
-  schedule:
-    - cron: "*/15 * * * *"
+# name: Schedule
+# on:
+#   schedule:
+#     - cron: "*/15 * * * *"
 
-jobs:
-  run:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - run: echo "Hello, world!" && date
+# jobs:
+#   run:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@v4
+#       - run: echo "Hello, world!" && date
