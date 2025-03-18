@@ -28,3 +28,5 @@ Secrets  - 秘匿性の高いものを扱う場合に使用する。複数のwor
 - 登録した値は暗号化される
 - ログ出力時にマスクされるが、空白などが入ると普通に出力されたりするので注意
 - 登録後に値が全く確認できなくなる
+
+[variables_secrets.yml](/.github/workflows/variables_secrets.yml)
