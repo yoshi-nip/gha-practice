@@ -19,4 +19,12 @@ jobs:
           action ${{ github.action }} \n
           event ${{ github.event }} \n
           event_path ${{ github.event_path }} \n
-          event_name ${{ github.event_name }} "
+          event_name ${{ github.event_name }} \n
+          ランナーのコンテキスト \n
+          runner ${{ runner.name }} \n
+          runner_os ${{ runner.os }} \n
+          runner_temp ${{ runner.temp }} \n
+          runner_arch ${{ runner.arch }} \n
+          runner_tool_cache ${{ runner.tool_cache }} \n
+          runner_workspace ${{ runner.workspace }} \n
+          runner_debug ${{ runner.debug }} \n"
