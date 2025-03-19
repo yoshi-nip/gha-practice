@@ -6,11 +6,11 @@ runnerコンテキスト
 
 githubは多いけど、runnnerはそこまで多くない
 
-[context.yml](/.github/workflows/context.yml)
+[context.yml](./bk_workflows/context.yml)
 
 ## 環境変数
-[environment.yml](/.github/workflows/environment.yml)
-[environment_override.yml](/.github/workflows/environment_override.yml)
+[environment.yml](./bk_workflows/environment.yml)
+[environment_override.yml](./bk_workflows/environment_override.yml)
 
 
 コンテキストを直接埋め込むのはアンチパターン
@@ -29,4 +29,4 @@ Secrets  - 秘匿性の高いものを扱う場合に使用する。複数のwor
 - ログ出力時にマスクされるが、空白などが入ると普通に出力されたりするので注意
 - 登録後に値が全く確認できなくなる
 
-[variables_secrets.yml](/.github/workflows/variables_secrets.yml)
+[variables_secrets.yml](./bk_workflows/variables_secrets.yml)
