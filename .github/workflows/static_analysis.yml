@@ -3,7 +3,7 @@ on:
   pull_request:
     paths: [".github/workflows/*.yml", ".github/workflows/*yaml"]
 defaults:
-  runs:
+  run:
     shell: bash
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
